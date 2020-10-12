@@ -27,8 +27,17 @@ header {
 
 #intro {
     padding: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #CEEEF9;
 }
+
+h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 100%;
+    font-weight: bolder;
+    text-align: center;
+    color: #d81969;
+} 
 
 #container {
     display: flex;
@@ -68,4 +77,63 @@ header {
     width: 30%;
     height: 400px;
     background-color: rgb(205, 212, 214);
+}
+
+.picture {
+    width: 70%;
+    height: 60%;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+        height: 625px;
+    }
+
+    header {
+        height:20%;
+        font-size: 18px;
+    }
+    
+    #intro {
+        height: 13%;
+        text-align: justify;
+        text-align-last: center;
+        font-size: 78%;
+        padding: 0.5%;
+    }
+    
+    #container {
+        margin: 0;
+        padding: 0;
+        height: 85%;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    
+    .item1 {     
+        width: 100%;
+        height: calc (85% / 3%)
+        border: solid #cec4ad;
+        border-width: 8px;
+    }
+    
+    .item2 {
+        width: 100%;
+        height: calc (85% / 3%)
+        border: solid #cec4ad;
+        border-width: 8px;
+    }
+    
+    .item3 {
+        width: 100%;
+        height: calc (85% / 3%)
+        border: solid #cec4ad;
+        border-width: 8px;
+    }
+    
+    .picture {
+        width: 70%;
+        height: 60%;
+    }
 }
